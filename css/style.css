@@ -66,6 +66,19 @@ footer a:hover {
 .dog:hover {
   bottom: 0;
 }
+.dog2 {
+  position: fixed;
+  bottom: -30px;
+  margin: 0;
+  right: 20%;
+  transition-property: bottom;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  width: 80px;
+}
+.dog2:hover {
+  bottom: 0;
+}
 
 @media screen and (max-width: 410px) {
   .container {
