@@ -1,0 +1,228 @@
+@import "./reset.css";
+
+body {
+  background: #424142;
+}
+
+header {
+  width: 100%;
+  /* inner layout */
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+}
+
+.container {
+  /* container будет занимать весь экран */
+  height: calc(100vh - 40px);
+  margin: 20px;
+  /* inner layout */
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  justify-items: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #ff8a5b;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* общие стили для всех навигационных кнопок */
+.navButtons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+}
+/* стили для footer */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  color: #ffffff50;
+}
+footer a {
+  color: #ffffff70;
+}
+footer a:hover {
+  color: white;
+}
+.dog {
+  position: fixed;
+  bottom: -30px;
+  margin: 0;
+  right: 10%;
+  transition-property: bottom;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  width: 80px;
+}
+.dog:hover {
+  bottom: 0;
+}
+
+@media screen and (max-width: 410px) {
+  .container {
+    width: 90vw;
+    margin: 5vw 5vw;
+  }
+  form {
+    font-family: "Open Sans", sans-serif;
+    background-color: #292829;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  /* label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+  } */
+
+  input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .navButtons {
+    /* width: 50px; */
+    /* height: 50px; */
+  }
+  h2 {
+    font-size: 22px;
+  }
+  button {
+    font-size: 14px;
+  }
+  .dog {
+    right: 5%;
+  }
+}
+@media screen and (min-width: 411px) {
+  form {
+    font-family: "Open Sans", sans-serif;
+    max-width: 400px;
+
+    background-color: #292829;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  /* label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+  } */
+
+  input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+nav {
+  /* background-color: #3a3a3a; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ff5733;
+}
