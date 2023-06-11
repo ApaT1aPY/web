@@ -1,5 +1,14 @@
 @import "./reset.css";
 
+/* красное изображение в правом верхем углу */
+.beta_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #424142;
