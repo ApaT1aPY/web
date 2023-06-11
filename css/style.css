@@ -1,5 +1,10 @@
 @import "./reset.css";
 
+a {
+  user-select: none;
+  cursor: pointer;
+}
+
 /* красное изображение в правом верхем углу */
 .beta_img {
   position: absolute;
